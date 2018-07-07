@@ -25,8 +25,8 @@ namespace WebApiJwtBearer
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             }).AddJwtBearer(options =>
             {
-                options.Authority = "https://login.microsoftonline.com/136544d9-038e-4646-afff-10accb370679";
-                options.Audience = "257b6c36-1168-4aac-be93-6f2cd81cec43";
+                options.Authority = "https://login.microsoftonline.com/0075db31-3f45-451a-b7d9-9ca926504d74";   // Tenant Id
+                options.Audience = "ba3add81-dd99-4b86-aa52-9acd840a0955";                                      // Client Id
                 options.TokenValidationParameters.ValidateLifetime = true;
                 options.TokenValidationParameters.ClockSkew = TimeSpan.Zero;
             });
